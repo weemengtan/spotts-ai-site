@@ -7,15 +7,15 @@ export default function Navigation() {
   const { setShowContactModal } = useUIStore();
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur z-50 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 py-5 flex justify-between items-center">
         <Link
           href="/"
-          className="text-xl font-light hover:opacity-80 transition-opacity cursor-pointer"
+          className="text-lg sm:text-xl font-light hover:opacity-80 transition-opacity cursor-pointer"
           aria-label="Go to homepage"
         >
           spotts<span className="text-gray-400">.ai</span>
         </Link>
-        <div className="flex gap-6 items-center text-sm">
+        <div className="hidden md:flex gap-6 items-center text-sm">
           <a href="#what" className="text-gray-600 hover:text-black">
             What It Does
           </a>
@@ -33,6 +33,14 @@ export default function Navigation() {
             Explore Your Use Case
           </button>
         </div>
+        {/* Mobile CTA Button */}
+        <button
+          onClick={() => setShowContactModal(true)}
+          className="md:hidden px-4 py-2 rounded-full transition-all hover:opacity-90 text-sm"
+          style={{ backgroundColor: '#06B6D4', color: 'white' }}
+        >
+          Contact
+        </button>
       </div>
     </nav>
   );

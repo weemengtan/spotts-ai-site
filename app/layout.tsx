@@ -12,18 +12,20 @@ export const metadata: Metadata = {
     default: 'Spotts.ai - AI Agents with Human Oversight',
     template: '%s | Spotts.ai'
   },
-  description: 'Deploy AI agents that handle workflows autonomously—with human oversight built in for critical decisions. Your team stays in control. 333% ROI, 74% achieve returns within year one.',
+  description: 'Meet spotts.ai - your AI buddy powered by advanced language models with human oversight. Fast AI execution with smart human guidance for critical business decisions. 333% ROI proven.',
   keywords: [
-    'AI agents',
-    'agentic AI',
-    'business automation',
-    'workflow automation',
-    'human oversight',
-    'AI with human control',
-    'Singapore AI solutions',
-    'enterprise AI',
-    'AI ROI',
-    'business process automation'
+    'AI buddy',
+    'AI human partnership',
+    'spotts.ai',
+    'AI with human oversight',
+    'business AI automation',
+    'AI governance',
+    'enterprise AI solutions',
+    'Singapore AI',
+    'AI strategy consulting',
+    'human-AI collaboration',
+    'AI business transformation',
+    'intelligent automation'
   ],
   authors: [{ name: 'Spotts.ai Team' }],
   creator: 'Spotts.ai',
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://spotts.ai',
     title: 'Spotts.ai - AI Agents with Human Oversight',
-    description: 'Deploy AI agents that handle workflows autonomously—with human oversight built in for critical decisions. 333% ROI proven results.',
+    description: 'Meet your AI buddy - spotts.ai combines lightning-fast AI execution with smart human oversight for critical business decisions. Partnership model that delivers measurable success.',
     siteName: 'Spotts.ai',
     images: [
       {
@@ -85,6 +87,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={robotoSerif.variable}>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <StructuredData />
       </head>
       <body className={`${robotoSerif.variable} font-serif antialiased`}>

@@ -1,80 +1,66 @@
 'use client';
 
+import Image from 'next/image';
 import { useUIStore } from '@/lib/store';
-import { steps } from '@/lib/data';
 
 export default function WhatIsAgenticAI() {
-  const { activeStep, setActiveStep } = useUIStore();
+  const { setShowContactModal } = useUIStore();
 
   return (
-    <section className="py-24 px-8" id="what">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-light mb-4">What is agentic AI?</h2>
-        <p className="text-lg font-light text-gray-600 mb-16 max-w-3xl leading-relaxed">
-          AI systems that can complete multi-step tasks independently, while keeping humans in the loop for critical decisions.
-        </p>
-
-        <div className="bg-gray-50 p-12 rounded-lg mb-12">
-          <div className="grid grid-cols-2 gap-12 mb-8">
-            <div>
-              <div className="text-sm font-normal mb-3 text-gray-500">Regular AI (like ChatGPT)</div>
-              <div className="space-y-3 text-sm font-light">
-                <div>You: &ldquo;Draft an email to this customer&rdquo;</div>
-                <div>AI: &ldquo;Here&rsquo;s your email&rdquo;</div>
-                <div>You: &ldquo;Now update the CRM&rdquo;</div>
-                <div>AI: &ldquo;I can&rsquo;t do that&rdquo;</div>
-                <div className="pt-2 text-gray-500 italic">You&rsquo;re still doing the work.</div>
-              </div>
+    <section className="py-12 sm:py-24 px-4 sm:px-8" id="what">
+      <div className="max-w-6xl mx-auto">
+        {/* Main Story Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12 lg:mb-16">
+          {/* Left Side - Image */}
+          <div className="relative order-2 lg:order-1">
+            <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-6 sm:p-8">
+              <Image
+                src="/images/hero/image-retro.png"
+                alt="Human and AI working together in partnership"
+                width={600}
+                height={400}
+                priority
+                className="w-full h-auto"
+              />
             </div>
-            <div>
-              <div className="text-sm font-normal mb-3 text-gray-500">Agentic AI (with oversight)</div>
-              <div className="space-y-3 text-sm font-light">
-                <div>You: &ldquo;Handle routine customer inquiries&rdquo;</div>
-                <div>AI: ✓ Reads inquiries</div>
-                <div className="pl-6">✓ Checks order history</div>
-                <div className="pl-6">✓ Processes standard refunds (&lt;$100)</div>
-                <div className="pl-6">⚠️ Escalates complex cases to you</div>
-                <div className="pt-2 font-normal">You approve, AI executes.</div>
-              </div>
+          </div>
+
+          {/* Right Side - Story Content */}
+          <div className="space-y-6 order-1 lg:order-2">
+            <div className="text-sm sm:text-base font-light text-gray-700 leading-relaxed space-y-4">
+              <p>
+                Meet spotts.ai — fast, sharp, and powered by the latest large language model with a full context-engineering pipeline. Give him the right plan and tools, and he can plan and execute at lightning speed.
+              </p>
+
+              <p>
+                But here&rsquo;s the catch: drop him into a critical business mission, and he&rsquo;ll quickly hit a wall. Why? Because even the smartest AI can&rsquo;t make judgment calls around risk, ethics, or strategy. Left on his own, he might push too far, miss a subtle trade-off, or optimize the wrong outcome.
+              </p>
+
+              <p>
+                That&rsquo;s when his human partner steps in — the steady hand who sets guardrails, weighs tough choices, and keeps everything on course. Together, they become something stronger: AI delivering speed and precision, humans providing oversight and accountability.
+              </p>
+
+              <p>
+                And that&rsquo;s where the magic happens — real success born from the partnership between people and AI.
+              </p>
             </div>
           </div>
         </div>
 
-        <div className="mb-16">
-          <h3 className="text-2xl font-light mb-8">How it works: Four steps</h3>
-          <div className="grid grid-cols-4 gap-6">
-            {steps.map((step, i) => (
-              <div
-                key={i}
-                className="relative"
-                onMouseEnter={() => setActiveStep(i)}
-              >
-                <div className={`p-6 rounded-lg border transition-all cursor-pointer ${
-                  activeStep === i ? 'border-gray-400 bg-white' : 'border-gray-200 bg-gray-50'
-                }`}>
-                  <div className="text-3xl font-light mb-2" style={{
-                    color: activeStep === i ? '#78350F' : '#9CA3AF'
-                  }}>
-                    {i + 1}
-                  </div>
-                  <div className="text-base font-normal mb-2">{step.title}</div>
-                  <div className="text-sm font-light text-gray-600 mb-3">{step.desc}</div>
-                  <div className="text-xs font-light text-gray-500 mb-2">{step.detail}</div>
-                  <div className="text-xs text-gray-400">{step.source}</div>
-                </div>
-                {i < 3 && (
-                  <div className="absolute top-1/2 -right-3 text-gray-300">→</div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Partnership Promise Section */}
+        <div className="text-center max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg font-light text-gray-700 leading-relaxed mb-8 px-4 sm:px-0">
+            This partnership is our promise: we don&rsquo;t just unleash AI, we pair it with the right human oversight, governance, and strategy so your critical operations run smarter, safer, and stronger. That&rsquo;s our unique edge — helping businesses avoid the common traps of AI projects and turn ambition into measurable success. 🚀 Curious how spotts.ai + <em>human buddy</em> model can transform your business?
+          </p>
 
-        <div className="bg-blue-50 border border-blue-100 p-8 rounded-lg">
-          <div className="text-sm font-normal mb-3">Human oversight is built in</div>
-          <div className="text-sm font-light leading-relaxed">
-            Agentic AI handles routine decisions independently, but critical actions—like large refunds, contract approvals, or security responses—require human approval. You set the rules: What can AI do autonomously? What needs your sign-off? The system learns your preferences and escalates appropriately.
-          </div>
+          {/* CTA Button */}
+          <button
+            onClick={() => setShowContactModal(true)}
+            className="inline-flex items-center px-8 py-4 rounded-full font-normal transition-all text-base hover:opacity-90"
+            style={{ backgroundColor: '#06B6D4', color: 'white' }}
+          >
+            👋 Meet Your AI Buddy
+          </button>
         </div>
       </div>
     </section>

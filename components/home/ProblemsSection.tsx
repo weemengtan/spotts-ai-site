@@ -3,20 +3,20 @@ import { problems } from '@/lib/data';
 
 export default function ProblemsSection() {
   return (
-    <section className="py-24 px-8 bg-gray-50" id="problems">
+    <section className="py-12 sm:py-24 px-4 sm:px-8 bg-gray-50" id="problems">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-light mb-4">What problems does this solve?</h2>
-        <p className="text-lg font-light text-gray-600 mb-16 max-w-3xl leading-relaxed">
+        <h2 className="text-3xl sm:text-4xl font-light mb-4">What problems does this solve?</h2>
+        <p className="text-base sm:text-lg font-light text-gray-600 mb-12 sm:mb-16 max-w-3xl leading-relaxed">
           Real business issues where AI agents are delivering measurable results—with human oversight maintaining control.
         </p>
 
         <div className="space-y-6">
           {problems.map((problem, i) => (
-            <div key={i} className="bg-white p-8 rounded-lg border border-gray-200">
-              <div className="grid grid-cols-12 gap-8">
-                <div className="col-span-3">
-                  <div className="text-lg font-normal mb-2">{problem.title}</div>
-                  <div className="text-sm text-gray-500">
+            <div key={i} className="bg-white p-4 sm:p-8 rounded-lg border border-gray-200">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
+                <div className="lg:col-span-3 mb-4 lg:mb-0">
+                  <div className="text-base sm:text-lg font-normal mb-2">{problem.title}</div>
+                  <div className="text-xs sm:text-sm text-gray-500">
                     {problem.stat}
                     <SourceLink
                       source={problem.source}
@@ -25,15 +25,15 @@ export default function ProblemsSection() {
                     />
                   </div>
                 </div>
-                <div className="col-span-5">
-                  <div className="text-sm font-normal mb-2 text-gray-600">What AI agents do</div>
-                  <div className="text-sm font-light">{problem.solution}</div>
+                <div className="lg:col-span-5 mb-4 lg:mb-0">
+                  <div className="text-xs sm:text-sm font-normal mb-2 text-gray-600">What AI agents do</div>
+                  <div className="text-xs sm:text-sm font-light">{problem.solution}</div>
                 </div>
-                <div className="col-span-4">
-                  <div className="text-sm font-normal mb-2" style={{ color: '#78350F' }}>
+                <div className="lg:col-span-4">
+                  <div className="text-xs sm:text-sm font-normal mb-2" style={{ color: '#78350F' }}>
                     Business outcome
                   </div>
-                  <div className="text-sm font-light">{problem.outcome}</div>
+                  <div className="text-xs sm:text-sm font-light">{problem.outcome}</div>
                 </div>
               </div>
             </div>

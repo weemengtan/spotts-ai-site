@@ -5,16 +5,16 @@ import { useUIStore } from '@/lib/store';
 export default function CTASection() {
   const { setShowContactModal } = useUIStore();
   return (
-    <section className="py-24 px-8 bg-gray-50">
+    <section className="py-12 sm:py-24 px-4 sm:px-8 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-light mb-6">Ready to explore your use case?</h2>
-        <p className="text-lg font-light text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+        <h2 className="text-3xl sm:text-4xl font-light mb-6">Ready to explore your use case?</h2>
+        <p className="text-base sm:text-lg font-light text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto leading-relaxed">
           We start with a conversation about your actual workflows. No generic demos. We prototype one use case in 2-4 weeks. If it works, we scale. If not, we pivot.
         </p>
 
-        <div className="bg-white p-10 rounded-lg border border-gray-200 mb-8">
-          <div className="text-lg font-normal mb-6">The 4-week discovery process</div>
-          <div className="grid grid-cols-4 gap-6 text-left">
+        <div className="bg-white p-6 sm:p-10 rounded-lg border border-gray-200 mb-6 sm:mb-8">
+          <div className="text-base sm:text-lg font-normal mb-6">The 4-week discovery process</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-left">
             <div>
               <div className="text-sm font-normal mb-2 text-gray-600">Week 1</div>
               <div className="text-sm font-light">

@@ -2,8 +2,8 @@ import SourceLink from '@/components/shared/SourceLink';
 
 export default function StatsBar() {
   return (
-    <section className="py-16 bg-gray-50 border-y border-gray-100" id="stats" aria-label="Key statistics">
-      <div className="max-w-6xl mx-auto px-8 grid grid-cols-3 gap-12 text-center">
+    <section className="py-12 sm:py-16 bg-gray-50 border-y border-gray-100" id="stats" aria-label="Key statistics">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12 text-center">
         <div>
           <div className="text-4xl font-light mb-2" style={{ color: '#78350F' }}>
             333% ROI

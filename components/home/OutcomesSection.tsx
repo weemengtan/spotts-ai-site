@@ -3,14 +3,14 @@ import { outcomes } from '@/lib/data';
 
 export default function OutcomesSection() {
   return (
-    <section className="py-24 px-8" id="outcomes">
+    <section className="py-12 sm:py-24 px-4 sm:px-8" id="outcomes">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-light mb-4">Does it actually work?</h2>
-        <p className="text-lg font-light text-gray-600 mb-16 max-w-3xl leading-relaxed">
+        <h2 className="text-3xl sm:text-4xl font-light mb-4">Does it actually work?</h2>
+        <p className="text-base sm:text-lg font-light text-gray-600 mb-12 sm:mb-16 max-w-3xl leading-relaxed">
           Here&rsquo;s what companies are seeing. Every number is sourced and verifiable.
         </p>
 
-        <div className="grid grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {outcomes.map((outcome, i) => (
             <div key={i} className="bg-gray-50 p-8 rounded-lg">
               <div className="text-3xl font-light mb-2" style={{ color: '#78350F' }}>
@@ -29,8 +29,8 @@ export default function OutcomesSection() {
           ))}
         </div>
 
-        <div className="bg-white border border-gray-200 rounded-lg p-10 mb-12">
-          <div className="grid grid-cols-2 gap-12">
+        <div className="bg-white border border-gray-200 rounded-lg p-6 sm:p-10 mb-8 sm:mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             <div>
               <div className="text-2xl font-light mb-6">The pattern: Start small, scale fast</div>
               <div className="space-y-6">

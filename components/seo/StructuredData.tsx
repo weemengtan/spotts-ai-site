@@ -5,7 +5,7 @@ export default function StructuredData() {
     "name": "Spotts.ai",
     "url": "https://spotts.ai",
     "logo": "https://spotts.ai/logo.png",
-    "description": "AI agents with human oversight for business automation",
+    "description": "Meet your AI buddy - spotts.ai combines lightning-fast AI execution with smart human oversight for critical business decisions",
     "foundingDate": "2024",
     "address": {
       "@type": "PostalAddress",
@@ -26,7 +26,7 @@ export default function StructuredData() {
     "@type": "WebSite",
     "name": "Spotts.ai",
     "url": "https://spotts.ai",
-    "description": "Deploy AI agents that handle workflows autonomously—with human oversight built in for critical decisions.",
+    "description": "Your AI buddy powered by advanced language models with human oversight - fast AI execution with smart human guidance for critical business decisions.",
     "publisher": {
       "@type": "Organization",
       "name": "Spotts.ai"
@@ -36,10 +36,10 @@ export default function StructuredData() {
   const softwareApplicationData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Spotts.ai AI Agents Platform",
+    "name": "Spotts.ai - AI Buddy Platform",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web Browser",
-    "description": "AI agents platform with human oversight for business workflow automation",
+    "description": "AI buddy platform that combines lightning-fast AI execution with smart human oversight for critical business decisions",
     "url": "https://spotts.ai",
     "offers": {
       "@type": "Offer",
@@ -54,19 +54,20 @@ export default function StructuredData() {
       "worstRating": "1"
     },
     "featureList": [
-      "AI workflow automation",
-      "Human oversight integration",
-      "Business process optimization",
-      "Real-time monitoring",
-      "ROI tracking"
+      "AI buddy partnership model",
+      "Lightning-fast AI execution",
+      "Smart human oversight",
+      "Critical decision support",
+      "Business transformation",
+      "333% ROI proven results"
     ]
   };
 
   const serviceData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "AI Agent Implementation Services",
-    "description": "Professional implementation of AI agents with human oversight for business automation",
+    "name": "AI Buddy Partnership Services",
+    "description": "Professional implementation of AI buddy partnerships with human oversight for critical business decisions and transformation",
     "provider": {
       "@type": "Organization",
       "name": "Spotts.ai"

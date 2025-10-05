@@ -5,9 +5,9 @@ import { useUIStore } from '@/lib/store';
 export default function Footer() {
   const { setShowContactModal } = useUIStore();
   return (
-    <footer className="py-12 border-t border-gray-200">
-      <div className="max-w-6xl mx-auto px-8">
-        <div className="grid grid-cols-4 gap-8 mb-8">
+    <footer className="py-8 sm:py-12 border-t border-gray-200">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div>
             <div className="text-lg font-light mb-3">
               spotts<span className="text-gray-400">.ai</span>
