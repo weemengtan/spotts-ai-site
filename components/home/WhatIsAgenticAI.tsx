@@ -29,7 +29,7 @@ export default function WhatIsAgenticAI() {
           <div className="space-y-6 order-1 lg:order-2">
             <div className="text-sm sm:text-base font-light text-gray-700 leading-relaxed space-y-4">
               <p>
-                Give any Agentic AI the right workflow and tools, and he can plan and execute at lightning speed. But here&rsquo;s the catch: drop him into a critical business mission, and he&rsquo;ll quickly hit a wall. Why? Because even the smartest AI can&rsquo;t make judgment calls around risk, ethics, or strategy. Left on his own, he might push too far, miss a subtle trade-off, or optimize the wrong outcome.
+                Give any Agentic AI the right workflow and tools, and he can plan and execute at lightning speed. But here&rsquo;s the catch: drop an Agentic AI into a your critical business operation, and it&rsquo;ll quickly hit a wall. Why? Because even the smartest AI can&rsquo;t make judgment calls around risk, ethics, or strategy. Left on its own, any Agentic AI might push too far, miss a subtle trade-off, or optimize the wrong outcome.
               </p>
 
               <p>
