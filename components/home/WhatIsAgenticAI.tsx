@@ -33,11 +33,11 @@ export default function WhatIsAgenticAI() {
               </p>
 
               <p>
-                That&rsquo;s when you step in to collaborate with your AI buddy — the steady hand who sets guardrails, weighs tough choices, and keeps everything on course. Only this human-AI partnership, you can achieve operational excellence: AI delivering speed and precision, while you provide all critical oversight and accountability.
+                That&rsquo;s when you step in to collaborate with your AI buddy — the steady hand who sets guardrails, weighs tough choices, and keeps everything on course. Only with this human-AI partnership, can you actually achieve operational excellence: AI delivering speed and precision, while you provide all critical oversight and accountability.
               </p>
 
               <p>
-                And that&rsquo;s where the magic happens — real success born from the partnership between people and AI.
+                And here&rsquo;s where highly successful AI-driven business operations happens — strategic collaboration between you and your AI buddy.
               </p>
             </div>
           </div>
