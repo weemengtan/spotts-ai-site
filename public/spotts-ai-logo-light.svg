@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 110" width="480" height="110">
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400&family=Roboto+Mono:wght@400&display=swap');
+    ]]></style>
+  </defs>
+  <line x1="76" y1="22" x2="55" y2="55" stroke="#1a1a18" stroke-width="0.7"/>
+  <line x1="55" y1="55" x2="34" y2="88" stroke="#1a1a18" stroke-width="0.7"/>
+  <circle cx="76" cy="22" r="20" fill="#1a1a18"/>
+  <circle cx="55" cy="55" r="12" fill="#1a1a18"/>
+  <circle cx="34" cy="88" r="7"  fill="#1a1a18"/>
+  <text x="112" y="78"
+    font-family="'Roboto Serif', Georgia, serif"
+    font-weight="400"
+    font-size="62"
+    letter-spacing="3"
+    fill="#1a1a18">spotts<tspan
+      font-family="'Roboto Mono', 'Courier New', monospace"
+      font-size="28"
+      font-weight="400"
+      letter-spacing="1"
+      opacity="0.42"
+      dy="-6">.ai</tspan></text>
+</svg>
