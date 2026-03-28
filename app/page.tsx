@@ -14,10 +14,20 @@ export const metadata: Metadata = {
     description: 'Deploy AI agents that handle workflows autonomously with human oversight. 74% achieve ROI within year one.',
     type: 'website',
     url: 'https://spotts.ai',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Spotts.ai - AI Agents with Human Oversight',
+      }
+    ],
   },
   twitter: {
+    card: 'summary_large_image',
     title: 'AI Agents with Human Oversight - 333% ROI Proven',
     description: 'Deploy AI agents that handle workflows autonomously with human oversight. 74% achieve ROI within year one.',
+    images: ['/og-image.png'],
   },
 };
 
