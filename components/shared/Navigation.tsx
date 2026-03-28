@@ -14,7 +14,7 @@ export default function Navigation() {
           className="text-lg sm:text-xl font-light hover:opacity-80 transition-opacity cursor-pointer"
           aria-label="Go to homepage"
         >
-          <Image src="/spotts-ai-logo-light.svg" alt="Spotts.ai" width={200} height={46} priority />
+          <Image src="/spotts-ai-og-image.png" alt="Spotts.ai" width={200} height={105} priority />
         </Link>
         <div className="hidden md:flex gap-6 items-center text-sm">
           <a href="#what" className="text-gray-600 hover:text-black">
