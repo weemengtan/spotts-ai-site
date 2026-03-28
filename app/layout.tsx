@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     siteName: 'Spotts.ai',
     images: [
       {
-        url: '/icon-512',
-        width: 512,
-        height: 512,
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
         alt: 'Spotts.ai - AI Agents with Human Oversight',
       }
     ],
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Spotts.ai - AI Agents with Human Oversight',
     description: 'Deploy AI agents that handle workflows autonomously—with human oversight built in for critical decisions.',
-    images: ['/icon-512'],
+    images: ['/og-image.png'],
     creator: '@spottsai',
   },
   robots: {
