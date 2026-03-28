@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useUIStore } from '@/lib/store';
 
 export default function Navigation() {
@@ -13,7 +14,7 @@ export default function Navigation() {
           className="text-lg sm:text-xl font-light hover:opacity-80 transition-opacity cursor-pointer"
           aria-label="Go to homepage"
         >
-          spotts<span className="text-gray-400">.ai</span>
+          <Image src="/spotts-ai-logo-light.svg" alt="Spotts.ai" width={120} height={32} priority />
         </Link>
         <div className="hidden md:flex gap-6 items-center text-sm">
           <a href="#what" className="text-gray-600 hover:text-black">
